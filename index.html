@@ -1,39 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JUEGO_LANDIA</title>
+
+    <title>JUEGO_LANDIA | Lista de Juegos</title>
+
+    <style>
+        /* Configuración general */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f4f7;
+            color: #222;
+            min-height: 100vh;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 17px;
+            color: #d1d5db;
+        }
+
+        /* Contenedor principal */
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        /* Título de sección */
+        .titulo-seccion {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .titulo-seccion h2 {
+            font-size: 26px;
+            color: #1f2937;
+        }
+
+        /* Lista de juegos */
+        .lista-juegos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        /* Tarjetas */
+        .juego {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .juego:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .juego h3 {
+            margin-bottom: 15px;
+            color: #374151;
+            text-transform: capitalize;
+        }
+
+        /* Botones */
+        .juego a {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .juego a:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Pie de página */
+        footer {
+            margin-top: 50px;
+            background-color: #1f2937;
+            color: #d1d5db;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>lista de juegos </h1>
-    <a href="file:///opt/lampp/htdocs/juego_landia/alfonzo/index.html"> alfonzo</a>
-    <a href="file:///opt/lampp/htdocs/juego_landia/carlos/index.html"> carlos</a>
-    
-    <a href="file:///opt/lampp/htdocs/juego_landia/fontecha/index-classic.html"> fontecha</a>
-    <a href="file:///opt/lampp/htdocs/juego_landia/harold/vercion2/index.html"> harold</a>
-    <a href="file:///opt/lampp/htdocs/juego_landia/jhoasnel/version2/index.html">jhoasnel</a>
-    <a href="file:///opt/lampp/htdocs/juego_landia/johan/Sudoku%20Version%202/index.html"> johan</a>
-    <a href="file:///opt/lampp/htdocs/juego_landia/juan_fernando/version_modificada/index.html">juan juan_fernando</a>
-    <a href="file:///opt/lampp/htdocs/juego_landia/juan_pablo/index.html"> juan_pablo|</a>
-    <a href="file:///opt/lampp/htdocs/juego_landia/julian/index.html">julian </a>
-    <a href="file:///opt/lampp/htdocs/juego_landia/macias/V2/index.html">macias</a>
-    <a href="file:///opt/lampp/htdocs/juego_landia/mariana/version_2/index.html"> mariana </a>
-    <a href="file:///opt/lampp/htdocs/juego_landia/mariangel_ortegate/index.html"> mariangel_ortegate </a>
-    <a href="file:///opt/lampp/htdocs/juego_landia/miguelito/frogger%20modificado/index.html"> miguelito </a>
-    <a href="file:///opt/lampp/htdocs/juego_landia/ramon/Version%201.1/angelo's_slime_blast1.html"> ramon|</a>
-    <a href="file:///opt/lampp/htdocs/juego_landia/rios/buscaminas_yo/index.html"> rios</a>
-    <a href="file:///opt/lampp/htdocs/juego_landia/samir/version_2/index.html"> samir </a>
-    <a href="file:///opt/lampp/htdocs/juego_landia/sofia/index.html">sofia</a>
-    <a href="file:///opt/lampp/htdocs/juego_landia/soreth/version_2/index.html">soreth</a> 
-    <a href="file:///opt/lampp/htdocs/juego_landia/yo/pongV2/index.html">yop</a>
 
+    <!-- Encabezado -->
+    <header>
+        <h1>JUEGO_LANDIA</h1>
+        <p>Plataforma de juegos</p>
+    </header>
 
+    <!-- Contenido principal -->
+    <main>
 
+        <section class="titulo-seccion">
+            <h2>Lista de juegos</h2>
+        </section>
 
+        <section class="lista-juegos">
 
+            <div class="juego">
+                <h3>Alfonzo</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/alfonzo/index.html">
+                    Jugar
+                </a>
+            </div>
 
+            <div class="juego">
+                <h3>Carlos</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/carlos/index.html">
+                    Jugar
+                </a>
+            </div>
 
+            <div class="juego">
+                <h3>Fontecha</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/fontecha/index-classic.html">
+                    Jugar
+                </a>
+            </div>
+
+            <div class="juego">
+                <h3>Harold</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/harold/vercion2/index.html">
+                    Jugar
+                </a>
+            </div>
+
+            <div class="juego">
+                <h3>Jhoasnel</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/jhoasnel/version2/index.html">
+                    Jugar
+                </a>
+            </div>
+
+            <div class="juego">
+                <h3>Johan</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/johan/Sudoku%20Version%202/index.html">
+                    Jugar
+                </a>
+            </div>
+
+            <div class="juego">
+                <h3>Juan Fernando</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/juan_fernando/version_modificada/index.html">
+                    Jugar
+                </a>
+            </div>
+
+            <div class="juego">
+                <h3>Juan Pablo</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/juan_pablo/index.html">
+                    Jugar
+                </a>
+            </div>
+
+            <div class="juego">
+                <h3>Julian</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/julian/index.html">
+                    Jugar
+                </a>
+            </div>
+
+            <div class="juego">
+                <h3>Macias</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/macias/V2/index.html">
+                    Jugar
+                </a>
+            </div>
+
+            <div class="juego">
+                <h3>Mariana</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/mariana/version_2/index.html">
+                    Jugar
+                </a>
+            </div>
+
+            <div class="juego">
+                <h3>Mariangel Ortegate</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/mariangel_ortegate/index.html">
+                    Jugar
+                </a>
+            </div>
+
+            <div class="juego">
+                <h3>Miguelito</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/miguelito/frogger%20modificado/index.html">
+                    Jugar
+                </a>
+            </div>
+
+            <div class="juego">
+                <h3>Ramon</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/ramon/Version%201.1/angelo's_slime_blast1.html">
+                    Jugar
+                </a>
+            </div>
+
+            <div class="juego">
+                <h3>Rios</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/rios/buscaminas_yo/index.html">
+                    Jugar
+                </a>
+            </div>
+
+            <div class="juego">
+                <h3>Samir</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/samir/version_2/index.html">
+                    Jugar
+                </a>
+            </div>
+
+            <div class="juego">
+                <h3>Sofia</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/sofia/index.html">
+                    Jugar
+                </a>
+            </div>
+
+            <div class="juego">
+                <h3>Soreth</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/soreth/version_2/index.html">
+                    Jugar
+                </a>
+            </div>
+
+            <div class="juego">
+                <h3>Oscar</h3>
+                <a href="file:///opt/lampp/htdocs/juego_landia/yo/pongV2/index.html">
+                    Jugar
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 JUEGO_LANDIA. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
+
 </html>
+```
